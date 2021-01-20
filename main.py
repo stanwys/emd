@@ -49,7 +49,7 @@ def experimentVariousAttributes(X,Y):
     balanced_best_train = 0.0
     balanced_best_test = 0.0
     doneIters = 0
-    X_train, X_test, y_train, y_test = getStratifiedSamples(X, Y, 1, 0.25)
+    X_train, X_test, y_train, y_test = getStratifiedSamples(X, Y, 8, 0.25)
 
     for comb_index in range(1, X.shape[1]):
         print(comb_index)
